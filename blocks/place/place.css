@@ -17,25 +17,25 @@
 
 @media screen and (max-width: 1080px) {
   .place {
-    grid-gap: 48px 32px;
+    justify-content: center;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .place {
-    grid-gap: 48px 28px;
+    grid-template-columns: 450px;
   }
 }
 
 @media screen and (max-width: 650px) {
   .place {
-    grid-template-columns: 1fr;    
-    grid-gap: 32px 0;
+    grid-template-columns: 340px;
   }
 }
 
 @media screen and (max-width: 380px) {
   .place {
-    grid-gap: 32px 0;
+    grid-template-columns: minmax(min-content, 320px);
+    justify-content: start;
   }
 }
